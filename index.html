@@ -16,8 +16,8 @@
     <body>
         <div>
             <input type="search" placeholder="Search" class="searchEdit">
-            <table class = "mainTable">
-                <tr class="titleTr">
+            <table class="mainTable">
+                <tr class="title">
                     <th class="name">道具名稱</th>
                     <th class="image">圖片</th>
                     <th class="type">類型</th>
@@ -26,4 +26,14 @@
             </table>
         </div>
     </body>
+    <script>
+        $(".searchEdit").on("input", function()
+        {
+            alert(this.value);
+            // $(".title").each(function()
+            // {
+            //     console.log($(this).find("td").eq(0).text())
+            // });
+        });
+    </script>
 </html>
